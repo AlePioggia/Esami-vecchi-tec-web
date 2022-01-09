@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+<head>
+<title>Form</title>
+
+<style>
+    table{
+        background-color: #ff0000;
+    }
+</style>
+
+</head>
+
+<body>
+    <form action="action.php" method="get">
+        <fieldset><legend>Informazioni personali:</legend>
+            <label>Nome:*<input type="text" placeholder="Nome" autocomplete="off" required></label>
+            <label>Cognome:*<input type="text" placeholder="Nome" autocomplete="off" required></label>
+            <label>Data di nascita<input type="date" min="1900-01-01"></label>
+        </fieldset>
+        <fieldset><legend>Informazioni aggiuntive</legend>
+            <label>Scegli un colore <input type="color" value="#ff0000"></label>
+            <p>Oppure scegli dalla lista:</p>
+            <label><input type="radio" value="rosso" checked>Rosso</label>
+            <label><input type="radio" value="blu">Blu</label>
+            <label><input type="radio" value="verde">Verde</label>
+            <label><input type="radio" value="altro">Altro</label>
+        </fieldset>
+        <label for="submit" type="hidden"></label>
+        <input type="submit" value="submit" id="submit">
+    </form>
+</body>
+
+</html>

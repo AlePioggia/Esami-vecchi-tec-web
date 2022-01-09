@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+<head>
+<title>Form</title>
+
+</head>
+
+<body>
+    <form action="action.php" method="get">
+        <fieldset><legend>Informazioni aggiuntive</legend>
+            <label>Altezza:<input type="range" min="1m" max="2.10m" step="0.1m"></label>
+            
+            <p>Allergie/Intolleranze</p>
+            <label><input type="checkbox" value="celiaca">Celiaca</label>
+            <label><input type="checkbox" value="proteineDelLatte">Proteine del latte</label>
+            <label><input type="checkbox" value="altro">Altro</label>
+        </fieldset>
+        <fieldset><legend>Informazioni personali</legend>
+            <label>Email*<input type="Email" autocomplete="off" placeholder="Email" required></label>
+            <label>Telefono*<input type="number"  autocomplete="off" placeholder="Telefono" required></label>
+            <label>Mese e anno di nascita<input type="month"></label>
+        </fieldset>
+        <label type="hidden" for="submit-button"></label>
+        <input type="submit" id="submit-button" value="Invia">
+    </form>
+</body>
+
+</html>

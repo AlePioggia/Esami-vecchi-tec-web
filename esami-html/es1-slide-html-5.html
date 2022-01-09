@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <fieldset> <legend>Anagrafica</legend>
+            <label>Nome:<input type="text"></label></br>
+            <label>Cognome:<input type="text"></label></br>
+            <label>Email:<input type="email"></label></br>
+        </fieldset>
+        <fieldset name="tipoElaborato"> <legend>Elaborato</legend>
+            <label>Tipo di elaborato<select>
+                <option value="semplice">semplice</option>
+                <option value="medio">medio</option>
+                <option value="complesso">complesso</option>
+            </select></label><br>
+            <label name="TipoElaborato">Numero di membri<select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select></label><br>
+        </fieldset>
+        <label type="hidden"><input type="submit" value="Invia"></label>
+    </form>
+</body>
+
+</html>
